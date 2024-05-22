@@ -1,0 +1,52 @@
+
+#faq{
+    span{
+        position: relative;
+        top: 1rem;
+        border-width: .4rem;
+        border-style: solid;
+        border-color: rgb(0, 0, 0) transparent transparent transparent;
+        display: block;
+        width: 4px;
+        height: 4px;
+        transition: 0.5s ease;
+    }
+    cursor: pointer;
+    height: 40rem;
+    color: $white;
+    text-align: center;
+    background-color: $blue;
+    padding: 1rem;
+    
+    h2{
+        margin: 2rem;
+        font-weight: 700;
+    }
+
+    .hide{
+        transition: height 500ms ease-in-out;
+        background-color: #596672;
+        height: 0;
+        overflow: hidden;
+    }
+    
+}
+.rotate{
+    transform: rotate(-180deg);
+}
+@keyframes twist {
+    50%{transform: rotate(180deg);}
+}
+
+@media only screen and (max-width: 600px){
+    #faq{height: 30rem;}
+}
+.show {
+     overflow: hidden;
+    -webkit-transition: height 5000ms ease-in-out;
+    -moz-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    transition: height 500ms ease-in-out;
+    background-color: #596672;
+    height:60px;
+}

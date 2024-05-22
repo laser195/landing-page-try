@@ -1,0 +1,98 @@
+.log{
+    height: 100vh;
+    background-color: $dark-orange;
+    text-align: center;
+    align-content: center;
+    color: $white;
+    font-size: 1.5em;
+    margin-bottom: 20vh;
+    img{
+        width: 12 vw;
+        height: 5vh;
+        margin: 4rem;
+    }
+    h1{
+        font-size: 4rem;
+        font-weight: 1000;
+        line-break: loose;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1.7rem;
+        padding: .5rem;
+        line-height: 30px;
+        span{
+            font-weight: 700
+        }
+       
+    }
+    button{
+        color: $white;
+        margin: 5px;
+        font-weight: 700;
+        transition: 0.3s ease;
+    }
+    button:hover{
+        background-color: aqua;
+    }
+    .bottom-img{
+        background-image: url('https://wallpaperaccess.com/full/6383317.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50%;
+        position: relative;
+        bottom: -10vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .log{
+        height: 50vh;
+        background-color: $dark-orange;
+        text-align: center;
+        align-content: center;
+        color: $white;
+        img{
+            width: 8 vw;
+            height: 5vh;
+            margin: .5rem;
+
+        }
+        h1{
+            font-size: 25px;
+            font-weight: 1000;
+            line-break: loose;
+        }
+        p{
+            font-weight: 800;
+            font-size: .7rem;
+            padding: .5rem;
+            line-height: 20px;
+            span{
+                font-weight: 1000
+            }
+           
+        }
+        button{
+            color: $white;
+            margin: 5px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        .bottom-img{
+        background-image: url('https://wallpaperaccess.com/full/6383317.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30%;
+        position: relative;
+        bottom: 10vh;
+        z-index: -1;
+            
+        }
+    }
+}

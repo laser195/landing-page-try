@@ -1,0 +1,43 @@
+#slider{
+    h2{
+        margin: 1rem; 
+    }
+    text-align: center;
+    margin: 1rem;
+    .imgs{
+        display: flex;
+        justify-content: center;
+        flex:5;
+        img{
+            width:2rem;
+            height: 12rem;
+            margin: 0.5 rem;
+            border: 1px solid #000 ;
+            transition: 1.5s;
+            
+        }  
+    }
+}
+.active-img{
+    flex:1.1;
+}
+@media only screen and (max-width: 600px){
+    #slider{
+        .imgs{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+
+        }
+        
+        img{
+            height:6vh !important;
+            width: 17rem !important;
+            margin: 0.5 rem;
+            border: 1px solid #000 ;
+            transition: 1.5s !important;
+            
+        }
+    }
+}
